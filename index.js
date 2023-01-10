@@ -49,6 +49,6 @@ bot.hears(/^status / ,(ctx)=>{
     });
 });
 
-expressApp.listen(80, () => {
-    console.log('Webhook listening on port 80!')
+expressApp.listen(8000, () => {
+    console.log('Webhook listening on port 8000!')
   })
