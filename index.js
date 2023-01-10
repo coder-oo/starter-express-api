@@ -4,7 +4,7 @@ const express = require('express')
 const expressApp = express()
 
 const bot = new Telegraf(process.env.TOKEN);
-expressApp.use(bot.webhookCallback('wh'))
+expressApp.use(bot.webhookCallback('/wh'))
 bot.telegram.setWebhook(`https://${process.env.DOMAIN}/wh`)
 
 expressApp.get('/', (req, res) => {
